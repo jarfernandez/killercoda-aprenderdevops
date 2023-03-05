@@ -1,5 +1,5 @@
 Para facilitar la construcción de la imagen con el servidor uWSGI que contiene nuestra aplicación, y para crear, 
-arrancar, parar y eliminar los contenedores que vamos a utilizar en el despliegue de la misma utilizaremos Docker 
+arrancar, parar y eliminar los contenedores que vamos a utilizar en el despliegue de la misma, utilizaremos Docker 
 Compose.
 
 ### docker-compose.yml
