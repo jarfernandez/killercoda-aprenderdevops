@@ -3,40 +3,41 @@
   "description": "Despliegue de una aplicación web Python en Docker con NGINX como proxy inverso y balanceador de carga",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "title": "Introducción",
+      "text": "intro/text.md"
     },
     "steps": [
       {
         "title": "Aplicación web Python \"Hola mundo\"",
-        "text": "step1.md"
+        "text": "step1/text.md"
       },
       {
         "title": "Librerías Python",
-        "text": "step2.md"
+        "text": "step2/text.md"
       },
       {
         "title": "Configuración del servidor uWSGI",
-        "text": "step3.md"
+        "text": "step3/text.md"
       },
       {
         "title": "Dockerfile",
-        "text": "step4.md"
+        "text": "step4/text.md"
       },
       {
         "title": "Docker Compose",
-        "text": "step5.md"
+        "text": "step5/text.md"
       },
       {
         "title": "Configuración de NGINX",
-        "text": "step6.md"
+        "text": "step6/text.md"
       },
       {
         "title": "Construcción de la imagen del servidor uWSGI",
-        "text": "step7.md"
+        "text": "step7/text.md"
       }
     ],
     "finish": {
-      "text": "finish.md"
+      "text": "finish/text.md"
     },
     "assets": {
       "host01": [
