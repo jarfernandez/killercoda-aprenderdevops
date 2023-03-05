@@ -16,7 +16,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "*", "target": "~/"}
+        {"file": "**", "target": "~/docker-uwsgi-nginx"}
       ]
     }
   },
