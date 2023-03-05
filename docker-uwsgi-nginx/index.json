@@ -3,7 +3,6 @@
   "description": "Despliegue de una aplicación web Python en Docker con NGINX como proxy inverso y balanceador de carga",
   "details": {
     "intro": {
-      "title": "Introducción",
       "text": "intro/text.md"
     },
     "steps": [
