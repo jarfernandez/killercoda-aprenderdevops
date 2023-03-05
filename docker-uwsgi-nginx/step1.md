@@ -16,3 +16,7 @@ def hello():
 if __name__ == "__main__":
     app.run()
 ```
+
+Vamos a ver el contenido del fichero `webapp.py`:
+
+`cat /root/docker-uwsgi-nginx/WebApp/webapp.py`{{exec}}
