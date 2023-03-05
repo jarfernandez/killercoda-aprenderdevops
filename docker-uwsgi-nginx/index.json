@@ -29,6 +29,10 @@
       {
         "title": "Configuración de NGINX",
         "text": "step6.md"
+      },
+      {
+        "title": "Construcción de la imagen del servidor uWSGI",
+        "text": "step7.md"
       }
     ],
     "finish": {
