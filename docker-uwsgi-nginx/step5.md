@@ -35,6 +35,6 @@ services:
     restart: unless-stopped
 ```
 
-Vamos a ver el contenido del `docker-compose.yml`:
+Vamos a ver el contenido del fichero `docker-compose.yml`:
 
 `cat /root/docker-uwsgi-nginx/docker-compose.yml`{{exec}}

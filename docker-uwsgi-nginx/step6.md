@@ -39,6 +39,6 @@ http {
 }
 ```
 
-Vamos a ver el contenido del `nginx.conf`:
+Vamos a ver el contenido del fichero `nginx.conf`:
 
 `cat /root/docker-uwsgi-nginx/nginx.conf`{{exec}}
