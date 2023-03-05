@@ -1,5 +1,4 @@
-El fichero `requirements.txt` contiene la lista de librerías Python que se necesitan para ejecutar la 
-aplicación.
+El fichero `requirements.txt` contiene la lista de librerías Python que se necesitan para ejecutar la aplicación.
 
 ### requirements.txt
 ```

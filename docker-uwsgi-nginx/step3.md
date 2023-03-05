@@ -1,5 +1,5 @@
-Para poder ejecutar nuestra aplicación web Python necesitaremos un servidor de aplicaciones WSGI como uWSGI.
-El fichero `uwsgi.ini` contiene la configuración del servidor uWSGI.
+Para poder ejecutar nuestra aplicación web Python necesitaremos un servidor de aplicaciones WSGI como uWSGI. El fichero 
+`uwsgi.ini` contiene la configuración del servidor uWSGI.
 
 ### uwsgi.ini
 ```

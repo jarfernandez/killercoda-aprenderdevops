@@ -1,5 +1,5 @@
-Vamos a construir una imagen Docker que contendrá el servidor uWSGI y nuestra aplicación web Python.
-Necesitaremos un `Dockerfile` con la definición de la imagen.
+Vamos a construir una imagen Docker que contendrá el servidor uWSGI y nuestra aplicación web Python. Necesitaremos un 
+`Dockerfile` con la definición de la imagen.
 
 ### Dockerfile
 ```
