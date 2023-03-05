@@ -21,6 +21,10 @@
       {
         "title": "Dockerfile",
         "text": "step4.md"
+      },
+      {
+        "title": "Docker Compose",
+        "text": "step5.md"
       }
     ],
     "finish": {
