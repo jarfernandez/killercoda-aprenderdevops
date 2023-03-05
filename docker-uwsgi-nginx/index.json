@@ -32,7 +32,8 @@
       },
       {
         "title": "Construcción de la imagen del servidor uWSGI",
-        "text": "step7/text.md"
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
       },
       {
         "title": "Despliegue de la aplicación en Docker",
