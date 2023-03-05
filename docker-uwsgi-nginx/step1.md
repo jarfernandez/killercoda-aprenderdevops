@@ -1,7 +1,4 @@
-
-<br>
-
-Vamos a utilizar una aplicación web Python desarrollada con Flask muy sencilla.
+Vamos a utilizar una aplicación web muy sencilla desarrollada con Python y el framework Flask.
 
 ### webapp.py
 ```
