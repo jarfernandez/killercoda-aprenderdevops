@@ -33,6 +33,10 @@
       {
         "title": "Construcción de la imagen del servidor uWSGI",
         "text": "step7/text.md"
+      },
+      {
+        "title": "Despliegue de la aplicación en Docker",
+        "text": "step8/text.md"
       }
     ],
     "finish": {
