@@ -4,7 +4,7 @@ Compose.
 
 ### docker-compose.yml
 ```
-version: '3.8'
+version: '3.3'
  
 services:
   nginx:
