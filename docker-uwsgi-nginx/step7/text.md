@@ -1,3 +1,6 @@
-Para construir la imagen del servidor uWSGI, ejecutamos el siguiente comando:
+Para construir la imagen del servidor uWSGI, ejecutamos los siguientes comandos:
 
-`docker-compose build`{{exec}}
+```
+cd /root/docker-uwsgi-nginx
+docker-compose build
+```{{exec}}
