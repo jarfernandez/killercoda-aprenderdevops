@@ -6,7 +6,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return f"Hello World from {socket.gethostname()}!"
+    return f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Hello, World!</title>
+    </head>
+    <body>
+      <h1>Hello, World! This is {socket.gethostname()}.</h1>
+    </body>
+    </html>
+    """
 
 
 if __name__ == "__main__":
