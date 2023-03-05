@@ -17,6 +17,10 @@
       {
         "title": "Configuración del servidor uWSGI",
         "text": "step3.md"
+      },
+      {
+        "title": "Dockerfile",
+        "text": "step4.md"
       }
     ],
     "finish": {
