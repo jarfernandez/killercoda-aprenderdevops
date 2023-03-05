@@ -25,6 +25,10 @@
       {
         "title": "Docker Compose",
         "text": "step5.md"
+      },
+      {
+        "title": "Configuración de NGINX",
+        "text": "step6.md"
       }
     ],
     "finish": {
