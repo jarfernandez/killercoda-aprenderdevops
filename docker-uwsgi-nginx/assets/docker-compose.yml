@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    hostname: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+    restart: unless-stopped
+ 
+  uwsgi-1:
+    build: .
+    image: aprenderdevops/uwsgi:latest
+    container_name: uwsgi-1
+    hostname: uwsgi-1
+    volumes:
+      - ./WebApp:/WebApp
+    restart: unless-stopped
+
+  uwsgi-2:
+    image: aprenderdevops/uwsgi:latest
+    container_name: uwsgi-2
+    hostname: uwsgi-2
+    volumes:
+      - ./WebApp:/WebApp
+    restart: unless-stopped

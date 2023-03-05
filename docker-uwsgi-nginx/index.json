@@ -1,0 +1,20 @@
+{
+  "title": "Aplicación web Python en Docker con NGINX",
+  "description": "Despliegue de una aplicación web Python en Docker con NGINX como proxy inverso y balanceador de carga",
+  "details": {
+    "steps": [
+      {
+        "title": "Introducción",
+        "text": "intro.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "~/"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
