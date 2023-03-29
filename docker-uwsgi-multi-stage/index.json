@@ -1,0 +1,48 @@
+{
+  "title": "Aplicación web Python en Docker con construcción multi-etapa",
+  "description": "Despliegue de una aplicación web Python en Docker con construcción multi-etapa.",
+  "details": {
+    "intro": {
+      "text": "intro/text.md"
+    },
+    "steps": [
+      {
+        "title": "Aplicación web Python \"Hola mundo\"",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "Librerías Python",
+        "text": "step2/text.md"
+      },
+      {
+        "title": "Configuración del servidor uWSGI",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "Dockerfile",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "Construcción de la imagen del servidor uWSGI",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "Despliegue de la aplicación en Docker",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish/text.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "**", "target": "~/docker-uwsgi-multi-stage"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
