@@ -41,4 +41,4 @@ ENTRYPOINT ["uwsgi", "--ini", "/uwsgi.ini"]
 
 Vamos a ver el contenido del `Dockerfile`:
 
-`cat /root/docker-uwsgi-nginx/Dockerfile`{{exec}}
+`cat /root/docker-uwsgi-multi-stage/Dockerfile`{{exec}}

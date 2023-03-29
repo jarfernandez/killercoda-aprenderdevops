@@ -10,4 +10,4 @@ module = $(UWSGI_APP):app
 
 Vamos a ver el contenido del fichero `uwsgi.ini`:
 
-`cat /root/docker-uwsgi-nginx/uwsgi.ini`{{exec}}
+`cat /root/docker-uwsgi-multi-stage/uwsgi.ini`{{exec}}

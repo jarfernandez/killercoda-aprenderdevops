@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
 Vamos a ver el contenido del fichero `webapp.py`:
 
-`cat /root/docker-uwsgi-nginx/WebApp/webapp.py`{{exec}}
+`cat /root/docker-uwsgi-multi-stage/WebApp/webapp.py`{{exec}}

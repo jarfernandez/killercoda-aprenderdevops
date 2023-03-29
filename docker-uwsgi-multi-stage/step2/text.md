@@ -12,4 +12,4 @@ Werkzeug==2.2.3
 
 Vamos a ver el contenido del fichero `requirements.txt`:
 
-`cat /root/docker-uwsgi-nginx/WebApp/requirements.txt`{{exec}}
+`cat /root/docker-uwsgi-multi-stage/WebApp/requirements.txt`{{exec}}
