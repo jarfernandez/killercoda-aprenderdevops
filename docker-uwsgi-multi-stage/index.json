@@ -28,9 +28,17 @@
         "verify": "step5/verify.sh"
       },
       {
+        "title": "Dockerfile multi-etapa",
+        "text": "step6/text.md"
+      },
+      {
+        "title": "Construcción multi-etapa de la imagen del servidor uWSGI",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      },
+      {
         "title": "Despliegue de la aplicación en Docker",
-        "text": "step6/text.md",
-        "verify": "step6/verify.sh"
+        "text": "step8/text.md"
       }
     ],
     "finish": {
