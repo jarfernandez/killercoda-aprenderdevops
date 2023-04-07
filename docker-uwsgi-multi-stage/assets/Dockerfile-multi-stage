@@ -5,8 +5,8 @@ ARG PYTHON_VERSION=3.11
 FROM python:${PYTHON_VERSION} AS build
 
 # Se instala uWSGI y todas las librerias que necesita la aplicacion
-COPY WebApp/requirements.txt requirements.txt
-RUN pip install uwsgi && pip install -r requirements.txt
+COPY
+RUN
  
 # Etapa run
 FROM python:${PYTHON_VERSION}-slim AS run
@@ -15,35 +15,35 @@ FROM python:${PYTHON_VERSION}-slim AS run
 ARG PYTHON_VERSION
 
 # Puerto HTTP por defecto para uWSGI
-ARG UWSGI_HTTP_PORT=8000
-ENV UWSGI_HTTP_PORT=$UWSGI_HTTP_PORT
+ARG
+ENV
 
 # Aplicacion por defecto para uWSGI
-ARG UWSGI_APP=webapp
-ENV UWSGI_APP=$UWSGI_APP
+ARG
+ENV
 
 # Se instalan dependencias
 RUN apt-get update && apt-get install -y libxml2
 
 # Se crea un usuario para arrancar uWSGI
-RUN useradd -ms /bin/bash admin
-USER admin
+RUN useradd
+USER
 
 # Se copia el contenido de la imagen builder
 COPY --from=build /usr/local/lib/python${PYTHON_VERSION}/site-packages /usr/local/lib/python${PYTHON_VERSION}/site-packages
 COPY --from=build /usr/local/bin/uwsgi /usr/local/bin/uwsgi
 
 # Se copia el contenido de la aplicacion
-COPY WebApp /WebApp
+COPY
 
 # Se copia el fichero con la configuración de uWSGI
-COPY uwsgi.ini uwsgi.ini
+COPY
 
 # Se establece el directorio de trabajo
-WORKDIR /WebApp
+WORKDIR
 
 # Se crea un volumen con el contenido de la aplicacion
-VOLUME /WebApp
+VOLUME
 
 # Se inicia uWSGI
-ENTRYPOINT ["uwsgi", "--ini", "/uwsgi.ini"]
+ENTRYPOINT
