@@ -47,3 +47,4 @@ VOLUME
 
 # Se inicia uWSGI
 ENTRYPOINT
+
