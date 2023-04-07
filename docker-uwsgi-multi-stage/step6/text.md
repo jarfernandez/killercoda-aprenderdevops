@@ -18,6 +18,8 @@ utilizará en el contenedor.
 Se puede utilizar una plantilla del `Dockerfile` multi-etapa en `/root/docker-uwsgi-multi-stage/Dockerfile-multi-stage`.
 
 <details><summary>Pista</summary><p>
+
+```
 # Version de Python (solo mayor y menor)
 ARG PYTHON_VERSION=3.11
 
@@ -67,4 +69,5 @@ VOLUME /WebApp
 
 # Se inicia uWSGI
 ENTRYPOINT ["uwsgi", "--ini", "/uwsgi.ini"]
+```
 </p></details>
