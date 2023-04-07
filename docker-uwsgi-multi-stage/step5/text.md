@@ -2,7 +2,7 @@ Para construir la imagen del servidor uWSGI, ejecutamos los siguientes comandos:
 
 ```
 cd /root/docker-uwsgi-multi-stage
-docker-compose build
+docker build -t aprenderdevops/uwsgi .
 ```{{exec}}
 
 Con el siguiente comando podemos verficar si se ha construido la imagen:
