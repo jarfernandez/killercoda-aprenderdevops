@@ -15,7 +15,7 @@ utilizará en el contenedor.
 - Se establece un directorio de trabajo y un volumen con el contenido de la aplicación.
 - Se inicia uWSGI con un `ENTRYPOINT`.
 
-Se puede utilizar una plantilla del `Dockerfile` multi-etapa en `/root/docker-uwsgi-multi-stage/Dockerfile-multi-stage`.
+Se puede utilizar la plantilla que se encuentra en `/root/docker-uwsgi-multi-stage/Dockerfile-multi-stage`.
 
 <details><summary>Pista</summary><p>
 
@@ -69,5 +69,5 @@ VOLUME /WebApp
 
 # Se inicia uWSGI
 ENTRYPOINT ["uwsgi", "--ini", "/uwsgi.ini"]
-```
+```{{copy}}
 </p></details>
