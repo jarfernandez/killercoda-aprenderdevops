@@ -1,7 +1,6 @@
-TODO: Modificar
-
 Vamos a construir una imagen Docker que contendrá el servidor uWSGI y nuestra aplicación web Python. Necesitaremos un 
-`Dockerfile` con la definición de la imagen.
+`Dockerfile` con la definición de la imagen. Este `Dockerfile` no es multi-etapa, no obstante, vamos a utilizarlo para 
+construir una primera versión de la imagen. 
 
 ### Dockerfile
 ```
