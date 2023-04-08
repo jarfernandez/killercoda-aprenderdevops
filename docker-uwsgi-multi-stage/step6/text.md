@@ -1,11 +1,11 @@
 Ahora vamos a construir nuevamente la imagen, pero para ello utilizaremos un `Dockerfile` multi-etapa con el siguiente 
 contenido:
-- Una variable de argumento `ARG PYTHON_VERSION=3.11` que se utilizará para especificar la versión de Python que se 
+- Una variable de argumento `ARG _PYTHON_VERSION=3.11` que se utilizará para especificar la versión de Python que se 
 utilizará en el contenedor.
 - Una etapa build a partir de la imagen `python` y la versión especificada en la variable de argumento anterior.
 - En la etapa build se instala uWSGI y todas las librerias que necesita la aplicación.
-- Una etapa run a partir de la imagen `python` y la versión especificada en la variable de argumento `PYTHON_VERSION`.
-- En esta etapa es necesario volver a incluir la variable de argumento `ARG PYTHON_VERSION`.
+- Una etapa run a partir de la imagen `python` y la versión especificada en la variable de argumento `_PYTHON_VERSION`.
+- En esta etapa es necesario volver a incluir la variable de argumento `ARG _PYTHON_VERSION`.
 - Variables de argumento y entorno para el puerto HTTP y la aplicación por defecto para uWSGI.
 - Instalación de dependencias `RUN apt-get update && apt-get install -y libxml2`
 - Creación de un usuario `admin` para arrancar uWSGI.
@@ -21,20 +21,20 @@ Se puede utilizar la plantilla que se encuentra en `/root/docker-uwsgi-multi-sta
 
 ```
 # Version de Python (solo mayor y menor)
-ARG PYTHON_VERSION=3.11
+ARG _PYTHON_VERSION=3.11
 
 # Etapa build
-FROM python:${PYTHON_VERSION} AS build
+FROM python:${_PYTHON_VERSION} AS build
 
 # Se instala uWSGI y todas las librerias que necesita la aplicacion
 COPY WebApp/requirements.txt requirements.txt
 RUN pip install uwsgi && pip install -r requirements.txt
 
 # Etapa run
-FROM python:${PYTHON_VERSION}-slim AS run
+FROM python:${_PYTHON_VERSION}-slim AS run
 
 # Es necesario volver a incluir en esta etapa esta variable
-ARG PYTHON_VERSION
+ARG _PYTHON_VERSION
 
 # Puerto HTTP por defecto para uWSGI
 ARG UWSGI_HTTP_PORT=8000
@@ -52,7 +52,7 @@ RUN useradd -ms /bin/bash admin
 USER admin
 
 # Se copia el contenido de la imagen builder
-COPY --from=build /usr/local/lib/python${PYTHON_VERSION}/site-packages /usr/local/lib/python${PYTHON_VERSION}/site-packages
+COPY --from=build /usr/local/lib/python${_PYTHON_VERSION}/site-packages /usr/local/lib/python${_PYTHON_VERSION}/site-packages
 COPY --from=build /usr/local/bin/uwsgi /usr/local/bin/uwsgi
 
 # Se copia el contenido de la aplicacion
