@@ -11,6 +11,8 @@ Con el siguiente comando podemos verficar si se ha construido la imagen:
 
 La salida de este comando debería ser algo similar a esto:
 
-`aprenderdevops/uwsgi   1.0.0     000bd833d12a   2 minutes ago   944MB`
+```text
+aprenderdevops/uwsgi   1.0.0     000bd833d12a   2 minutes ago   944MB
+```
 
 > La imagen tiene un tamaño de más de 900MB.

@@ -11,7 +11,7 @@ Con el siguiente comando podemos verficar si se ha construido la imagen:
 
 La salida de este comando debería ser algo similar a esto:
 
-```
+```text
 aprenderdevops/uwsgi   2.0.0       7c9601a743f9   25 seconds ago   209MB
 aprenderdevops/uwsgi   1.0.0       000bd833d12a   6 minutes ago    944MB
 ```
