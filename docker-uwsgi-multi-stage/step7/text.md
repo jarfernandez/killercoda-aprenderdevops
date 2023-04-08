@@ -2,7 +2,7 @@ Para construir la imagen del servidor uWSGI con construcción multi-etapa, ejecu
 
 ```
 cd /root/docker-uwsgi-multi-stage
-docker build -f Dockerfile-multi-stage -t aprenderdevops/uwsgi .
+docker build -f Dockerfile-multi-stage -t aprenderdevops/uwsgi:2.0.0 .
 ```{{exec}}
 
 Con el siguiente comando podemos verficar si se ha construido la imagen:
@@ -11,4 +11,9 @@ Con el siguiente comando podemos verficar si se ha construido la imagen:
 
 La salida de este comando debería ser algo similar a esto:
 
-`aprenderdevops/uwsgi   latest    29f59e0c142e   10 seconds ago   944MB`
+```
+aprenderdevops/uwsgi   2.0.0       7c9601a743f9   25 seconds ago   209MB
+aprenderdevops/uwsgi   1.0.0       000bd833d12a   6 minutes ago    944MB
+```
+
+> La nueva imagen tiene un tamaño inferior a la anterior.
